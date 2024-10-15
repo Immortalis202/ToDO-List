@@ -12,9 +12,7 @@ struct PromemoriaView: View {
     @State private var testo: String = ""
     
     var filtrati:[Riga] {
-        elenco.filter { riga in
-            !riga.fatto || !mostraDaFare
-        }
+        elenco.filter { !$0.fatto || !mostraDaFare }
     }
     
     
