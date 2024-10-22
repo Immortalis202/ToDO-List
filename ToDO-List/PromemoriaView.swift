@@ -52,6 +52,8 @@ struct PromemoriaView: View {
     }
 }
 
+//nel caso di ForEach normale fare ForEach(array, id:\.self){elemento in Text(elemento)}
+
 #Preview {
     PromemoriaView()
 }
